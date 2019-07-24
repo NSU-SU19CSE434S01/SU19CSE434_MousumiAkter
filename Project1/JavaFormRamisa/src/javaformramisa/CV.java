@@ -333,8 +333,12 @@ public class CV extends javax.swing.JFrame {
              while(matcher.find()) {
      		    matcher.appendReplacement(sb, tokens.get(matcher.group(1)));
      		}
+     		matcher.appendTail(sb);
+     		String finalHTML = sb.toString();
+	
+		File f= new File("D:\\nameHTML.html");
     }
-    
+
     /**
      * @param args the command line arguments
      */
