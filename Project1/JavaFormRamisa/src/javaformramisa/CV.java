@@ -319,6 +319,15 @@ public class CV extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField5ActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+    	Map<String,String> tokens = new HashMap<String,String>() ;
+
+    	String template = "";
+    	String patternString = "%(" + StringUtils.join(tokens.keySet(), "|") + ")%";
+             Pattern pattern = Pattern.compile(patternString);
+             Matcher matcher = pattern.matcher(template);
+    }
+
     /**
      * @param args the command line arguments
      */
