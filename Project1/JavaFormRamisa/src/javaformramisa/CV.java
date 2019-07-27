@@ -343,6 +343,10 @@ public class CV extends javax.swing.JFrame {
 			bw.write(finalHTML);
 			bw.close();
 		}
+		catch
+		{
+			e.printStackTrace();
+		}
     }
 
     /**
