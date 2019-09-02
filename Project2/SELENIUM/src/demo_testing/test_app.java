@@ -11,6 +11,7 @@ public class test_app {
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://phptravels.com/demo/");
+		driver.manage().window().maximize();
 
 	}
 
