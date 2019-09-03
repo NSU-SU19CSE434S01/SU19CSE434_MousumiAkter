@@ -127,6 +127,6 @@ public class test_app {
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("//*[@id=\"guestform\"]/div[3]/div[2]/input")).sendKeys("01762242838");
 			Thread.sleep(1000);
-			driver.findElement(By.xpath("//*[@id=\"guestform\"]/div[4]/div[2]/input")).sendKeys("Bashundhara R/A, Dhaka, Bangladesh");		}
-		
+			driver.findElement(By.xpath("//*[@id=\"guestform\"]/div[4]/div[2]/input")).sendKeys("Bashundhara R/A, Dhaka, Bangladesh");
+		}
 	}
