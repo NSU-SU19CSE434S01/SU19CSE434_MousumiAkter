@@ -117,7 +117,13 @@ public class test_app {
 			Thread.sleep(3000);
 			//#body-section > div:nth-child(7) > div.panel.panel-default > div.panel-body > div > form > div:nth-child(5) > button
 
-			driver.findElement(By.xpath("//*[@id=\"guestform\"]/div[1]/div[2]/input")).sendKeys("Mousumi");			
+			driver.findElement(By.xpath("//*[@id=\"guestform\"]/div[1]/div[2]/input")).sendKeys("Mousumi");
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//*[@id=\"guestform\"]/div[1]/div[3]/input")).sendKeys("Akter");
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//*[@id=\"guestform\"]/div[2]/div[2]/input")).sendKeys("mousumi.akter04@northsouth.edu");
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//*[@id=\"guestform\"]/div[2]/div[3]/input")).sendKeys("mousumi.akter04@northsouth.edu");
 		}
 		
 	}
