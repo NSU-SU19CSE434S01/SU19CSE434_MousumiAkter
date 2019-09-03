@@ -52,5 +52,23 @@ public class test_app {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
-}
+		
+		
+	
+	}
+	
+	public static void setInputField() {
+		
+		try {
+			driver.findElement(By.xpath("//*[@id=\"body-section\"]/section/div[2]/div/div/div[2]/ul/li[3]/a")).click();
+			Thread.sleep(3000);
+			
+			driver.findElement(By.xpath("//*[@id=\"s2id_autogen3\"]/a/span[1]")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//*[@id=\"select2-drop\"]/div/input")).sendKeys("Dubai");
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("/html/body/div[18]/div/input")).sendKeys(Keys.RETURN);
+			
+		}
+		
+	}
