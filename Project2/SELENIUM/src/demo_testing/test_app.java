@@ -192,3 +192,5 @@ public class test_app {
 			driver.get("https://www.phptravels.net/register");
 			
 			driver.findElement(By.xpath("//*[@id=\"headersignupform\"]/div[3]/input")).sendKeys("Mousumi");
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//*[@id=\"headersignupform\"]/div[4]/input")).sendKeys("Akter");
