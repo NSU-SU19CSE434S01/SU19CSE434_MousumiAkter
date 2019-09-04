@@ -202,6 +202,9 @@ public class test_app {
 			driver.findElement(By.xpath("//*[@id=\"headersignupform\"]/div[7]/input")).sendKeys("123456");
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("//*[@id=\"headersignupform\"]/div[8]/input")).sendKeys("123456");
+			Thread.sleep(1000);
+			jse = (JavascriptExecutor)driver;
+			jse.executeScript("scroll(0,200)");
 			}
 		}
 	}
