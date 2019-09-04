@@ -224,7 +224,18 @@ public class test_app {
 			
 			//driver.close(); */
 			
-			driver.get("https://www.phptravels.net/account/logout");
-			}
+			driver.get("https://www.phptravels.net/account/logout"); 
+			
+//			Select select = new Select(driver.findElement(By.cssSelector("body > nav > div > div.collapse.navbar-collapse > ul.nav.navbar-nav.navbar-right.hidden-sm.go-left > ul > li:nth-child(1) > a")));
+//			Thread.sleep(1000);
+//			select.selectByIndex(1);
+//			Thread.sleep(1000);
+			
+			
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+		
 	}
+}
