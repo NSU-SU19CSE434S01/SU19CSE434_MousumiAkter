@@ -205,6 +205,26 @@ public class test_app {
 			Thread.sleep(1000);
 			jse = (JavascriptExecutor)driver;
 			jse.executeScript("scroll(0,200)");
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//*[@id=\"headersignupform\"]/div[9]/button")).click();
+			Thread.sleep(1000);
+			/*jse = (JavascriptExecutor)driver;
+			jse.executeScript("scroll(0,-500)");
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//*[@id=\"headersignupform\"]/div[6]/input")).clear();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//*[@id=\"headersignupform\"]/div[6]/input")).sendKeys("mousumi.akter04@northsouth.edu");
+			Thread.sleep(1000);
+			jse = (JavascriptExecutor)driver;
+			jse.executeScript("scroll(0,200)");
+			driver.findElement(By.xpath("//*[@id=\"headersignupform\"]/div[9]/button")).click();
+			Thread.sleep(3000);
+			
+			//driver.findElement(By.xpath("/html/body/nav/div/div[2]/ul[2]/ul/li[1]/a")).click();
+			
+			//driver.close(); */
+			
+			driver.get("https://www.phptravels.net/account/logout");
 			}
 		}
 	}
