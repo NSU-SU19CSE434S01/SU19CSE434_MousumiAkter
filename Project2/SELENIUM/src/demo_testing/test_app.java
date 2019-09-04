@@ -130,15 +130,19 @@ public class test_app {
 			driver.findElement(By.xpath("//*[@id=\"guestform\"]/div[4]/div[2]/input")).sendKeys("Bashundhara R/A, Dhaka, Bangladesh");
 			Thread.sleep(1000);
 			
-			driver.findElement(By.xpath("//*[@id=\"s2id_autogen1\"]/a")).click();
+			jse = (JavascriptExecutor)driver;
+			jse.executeScript("scroll(0,300)");
 			Thread.sleep(1000);
-			driver.findElement(By.xpath("//*[@id=\"s2id_autogen1\"]/a")).sendKeys("Bangladesh");
-			Thread.sleep(1000);
+			
+//			driver.findElement(By.xpath("//*[@id=\"s2id_autogen1\"]/a")).click();
+//			Thread.sleep(1000);
+//			driver.findElement(By.xpath("//*[@id=\"s2id_autogen1\"]/a")).sendKeys("Bangladesh");
+//			Thread.sleep(1000);
 			driver.findElement(By.xpath("//*[@id=\"s2id_autogen1\"]/a")).sendKeys(Keys.RETURN);
 			Thread.sleep(1000);
 			
 			jse = (JavascriptExecutor)driver;
-			jse.executeScript("scroll(0,200)");
+			jse.executeScript("scroll(0,300)");
 			Thread.sleep(1000);
 			
 			driver.findElement(By.xpath("//*[@id=\"guestform\"]/div[8]/div/div[1]")).click();
@@ -177,3 +181,15 @@ public class test_app {
 		
 		
 	}
+	
+	
+	public void signupLogin() {
+		 
+		try {
+			driver.findElement(By.xpath("/html/body/nav/div/div[1]/a/img")).click();
+			Thread.sleep(3000);
+
+			driver.get("https://www.phptravels.net/register");
+		}
+	}
+}
