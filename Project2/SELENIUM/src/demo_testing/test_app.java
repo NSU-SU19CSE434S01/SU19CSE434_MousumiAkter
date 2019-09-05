@@ -251,6 +251,12 @@ public class test_app {
 			driver.findElement(By.xpath("//*[@id=\"loginfrm\"]/div[1]/div[5]/div/label")).click();
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("//*[@id=\"loginfrm\"]/button")).click();
-			}
+			
+
+			
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+		
 	}
