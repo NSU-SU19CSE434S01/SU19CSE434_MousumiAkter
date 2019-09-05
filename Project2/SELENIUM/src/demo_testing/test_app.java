@@ -238,4 +238,11 @@ public class test_app {
 		}
 		
 	}
+	
+	public void logIn() {
+		
+		try {
+			driver.get("https://www.phptravels.net/login");
+		}
+	}
 }
