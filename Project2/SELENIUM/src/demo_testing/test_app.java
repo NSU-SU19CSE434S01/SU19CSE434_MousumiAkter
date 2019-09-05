@@ -260,3 +260,10 @@ public class test_app {
 		}
 		
 	}
+	
+	public void closeBrowser() {
+		
+		driver.close();
+	}
+
+}
