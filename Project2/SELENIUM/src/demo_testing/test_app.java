@@ -243,6 +243,8 @@ public class test_app {
 		
 		try {
 			driver.get("https://www.phptravels.net/login");
+			
+			driver.findElement(By.xpath("//*[@id=\"loginfrm\"]/div[1]/div[5]/div/div[1]/input")).sendKeys("mousumi.akter04@northsouth.edu");
+			}
 		}
 	}
-}
