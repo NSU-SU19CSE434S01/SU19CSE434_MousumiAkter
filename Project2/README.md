@@ -80,16 +80,10 @@ The website that I test is :
 **Screen Short**
 
 	<p>
-		<img src="">
+		<img src="C:\Users\USER\Documents\GitHub\CSE434\Project2\mockups\11.jpg">
 
-		<img src="">
+		<img src="C:\Users\USER\Documents\GitHub\CSE434\Project2\mockups\12.jpg">
 
-		<img src="">
-
-		<img src="">
-
-		<img src="">
-
-		<img src="">
+		<img src="C:\Users\USER\Documents\GitHub\CSE434\Project2\mockups\13.jpg">
 
 	</p>
